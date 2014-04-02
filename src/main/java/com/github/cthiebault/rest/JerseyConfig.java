@@ -1,4 +1,4 @@
-package com.github.cthiebault;
+package com.github.cthiebault.rest;
 
 import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.server.ResourceConfig;

@@ -1,4 +1,4 @@
-package com.github.cthiebault;
+package com.github.cthiebault.rest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
