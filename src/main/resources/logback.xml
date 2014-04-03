@@ -2,7 +2,7 @@
 
 <configuration scan="true">
 
-  <logger name="org.glassfish" level="debug"/>
+  <logger name="org.glassfish" level="trace"/>
 
   <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>

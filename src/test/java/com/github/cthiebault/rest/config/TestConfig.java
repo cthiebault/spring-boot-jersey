@@ -1,8 +1,9 @@
-package com.github.cthiebault.rest;
+package com.github.cthiebault.rest.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import com.github.cthiebault.rest.UsersResource;
 import com.github.cthiebault.service.UserService;
 
 /**

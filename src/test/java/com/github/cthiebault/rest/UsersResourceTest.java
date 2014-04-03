@@ -9,6 +9,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.github.cthiebault.rest.config.JerseyConfig;
+import com.github.cthiebault.rest.config.TestConfig;
+
 public class UsersResourceTest extends JerseyTest {
 
   private static final Logger log = LoggerFactory.getLogger(UsersResourceTest.class);

@@ -1,14 +1,14 @@
 package com.github.cthiebault.rest;
 
 import javax.inject.Inject;
+import javax.validation.constraints.NotNull;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.github.cthiebault.domain.User;
@@ -17,14 +17,18 @@ import com.github.cthiebault.service.UserService;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Component
-@Path("/users/{name}")
+@Scope("request")
 public class UserResource {
 
   @Inject
   private UserService userService;
 
-  @PathParam("name")
+  @NotNull
   private String name;
+
+  public void setName(@NotNull String name) {
+    this.name = name;
+  }
 
   @GET
   @Produces(APPLICATION_JSON)
