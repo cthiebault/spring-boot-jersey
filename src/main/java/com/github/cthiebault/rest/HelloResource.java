@@ -18,4 +18,10 @@ public class HelloResource {
   public String hello() {
     return "Hello World";
   }
+
+  @GET
+  @Path("/exception")
+  public String exception() {
+    throw new RuntimeException("He's dead Jim");
+  }
 }
